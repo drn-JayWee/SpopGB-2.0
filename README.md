@@ -1,1 +1,1 @@
-# SpopGB-2.0
+# ShopGB_2.0

@@ -1,0 +1,50 @@
+.btn {
+	padding: 1rem 2rem;
+	background-color: unset;
+	border: none;
+	outline: none;
+	border-radius: 1rem;
+	color: $text;
+	cursor: pointer;
+	border: .1rem solid $accent;
+}
+
+
+.btn-success {
+	background-color: $accent;
+}
+
+
+.btn-flowrino {
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	background: linear-gradient(to right, #f0314b, OrangeRed, #f0314b);
+	background-size: 600% 600%;
+	border: 1px solid transparent;
+	animation: gradient 30s linear infinite;
+	color: $text;
+}
+
+.btn-flowrino:hover {
+	background: linear-gradient(to right,
+			Indigo,
+			DarkViolet,
+			DarkOrchid,
+			Purple,
+			Indigo);
+	background-size: 600% 600%;
+	animation: gradient 10s linear infinite;
+	filter: drop-shadow(0px 0px 25px rgb(88, 88, 88));
+	font-weight: 400;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 600% 50%;
+	}
+}

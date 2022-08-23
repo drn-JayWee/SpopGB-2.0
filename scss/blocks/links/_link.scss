@@ -1,0 +1,36 @@
+.link {
+	position: absolute;
+	width: 35%;
+	height: 90vh;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__styles {
+		font-family: 'Raleway-Regular';
+	}
+
+	&__text {
+		text-decoration: none;
+		color: white;
+		padding: 0.9rem;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: .2rem;
+		transition: $transition;
+		opacity: 0;
+		transform: translateY(10px);
+		animation: hide 0.5s forwards ease;
+	
+		&:hover {
+			color: #f0314b;
+		}
+	}
+}
+
+.container.active .link .link__text {
+	animation: appear 0.5s forwards ease var(--i);
+}

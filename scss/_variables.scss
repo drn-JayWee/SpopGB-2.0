@@ -1,0 +1,65 @@
+//===== Переменные ----------------------------
+
+$accent: #f0314b; // акцентный цвет
+$text: #eee; // текстовый цвет
+$dark: #202328; // темный цвет
+$deep: #171a1a; // глубокий цвет
+$dark-header: #6f7a8b; // цвет заголовка
+$dark-div: #2d3038; // цвет блока
+$light-bg: #fafafa; // цвет фона
+$light-disabled: #e4e6e8; // цвет
+$light-div: #e7e7e8; // цвет
+$middle-gray: rgba(111, 122, 139, 0.75); // средне-серый цвет
+$text-light: #999999;
+
+
+//---------- Текст --------------------------------
+
+$regular-text: 16px; // обычный текст
+$small-text: 14px; // текст
+$lineheight: 1.75; // высота шрифта
+$userfont: awe; // пользовательский шрифт
+
+//-------------------------------------------------
+
+$radius: 5px;
+$radius-style: 0 5px;
+
+//---------- Анимация------------------------------
+
+$transition: .25s ease-out;
+
+//---------- Шрифты------------------------------
+
+@font-face {
+	font-family: 'Raleway-Regular';
+	font-style: normal;
+	src: url(../fonts/raleway/raleway-v22-cyrillic-regular.woff2);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/roboto/roboto-v29-cyrillic-300.woff2);
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/roboto/roboto-v29-cyrillic-500.woff2);
+}
+
+@font-face {
+	font-family: 'Tangerine';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/tangerine-v17-latin/tangerine-v17-latin-regular.woff2);
+}
+
+@font-face {
+	font-family: 'Tangerine';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/tangerine-v17-latin/tangerine-v17-latin-700.woff2);
+}

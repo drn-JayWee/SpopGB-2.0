@@ -1,0 +1,115 @@
+.navbar {
+	// position: fixed;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+
+	&__menu {
+		height: 3rem;
+		max-width: 72rem;
+		margin: 0.5rem auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__navigation {
+		width: 10rem;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	&__BandB {
+		display: flex;
+		align-items: center;
+	}
+
+	&__quantity {
+		margin-right: 2rem;
+		color: white;
+	}
+
+
+	
+	&__burger {
+		height: 3rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__bar {
+		width: 1.9rem;
+		height: .1rem;
+		border-radius: 2px;
+		background-color: #eee;
+		transition: 0.5s;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: inherit;
+			height: inherit;
+			background-color: #eee;
+			transition: 0.5s;
+		}
+
+		&:before {
+			transform: translateY(-9px);
+		}
+
+		&:after {
+			transform: translateY(9px);
+		}
+	}
+}
+
+
+
+.container.active .navbar__bar {
+	transform: rotate(360deg);
+	background-color: transparent;
+}
+
+.container.active .navbar__bar:before {
+	transform: translateY(0) rotate(45deg);
+	background-color: $accent;
+}
+
+.container.active .navbar__bar:after {
+	transform: translateY(0) rotate(-45deg);
+	background-color: $accent;
+}
+
+.container.active .main {
+	animation: main-animation 0.5s ease;
+	cursor: pointer;
+	transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+	from {
+		transform: translate(0);
+	}
+
+	to {
+		transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

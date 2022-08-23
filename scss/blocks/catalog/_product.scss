@@ -1,0 +1,24 @@
+.product {
+    overflow: scroll;
+	overflow-x: hidden;
+	height: 55rem;
+
+    &__info {
+		padding-right: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		color: whitesmoke;
+		text-align: center;
+		font-size: 4rem;
+		font-family: 'Tangerine';
+	}
+
+	&__text {
+		color: $text-light;
+		text-align: center;
+		font-family: 'Raleway-Regular';
+		font-variant: all-petite-caps;
+	}
+}

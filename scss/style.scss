@@ -1,0 +1,36 @@
+@import './general';
+@import './mixin';
+@import './resert';
+@import './variables';
+
+//===== link --------------------
+
+@import './blocks/links/link';
+@import './blocks/links/mobileLink';
+
+//===== Navbar --------------------
+
+@import './blocks/navbar/navbar';
+@import './blocks/navbar/basket';
+
+//===== Index ---------------------
+
+@import './blocks/index/header';
+@import './blocks/index/brand';
+
+//===== Catalog --------------------
+
+@import './blocks/catalog/header';
+// @import '/scss/blocks/catalog/header';
+@import './blocks/catalog/product';
+@import './blocks/catalog/productInfo';
+@import './blocks/catalog/menu';
+@import './blocks/catalog/menuDropdown';
+@import './blocks/catalog/card';
+
+//===== Footer --------------------
+
+
+//===== Botton --------------------
+
+@import './blocks/button/botton';

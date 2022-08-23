@@ -1,0 +1,87 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+	.navbar__menu {
+		padding: 0 1rem;
+	}
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+	.navbar__menu {
+		padding: 0 1rem;
+	}
+	.menu {
+		display: none;
+	}
+
+	.card-box {
+		border-left: none;
+	}
+
+	.link {
+		width: auto;
+		right: 0rem;
+		left: 0rem;
+	}
+
+	.mobileLink {
+		display: contents;
+	}
+
+	.container.active .main {
+		animation: none;
+		transform: perspective(1300px) rotateY(180deg) translateZ(310px) scale(0.0);
+	}
+
+	.container.active .shadow.one {
+		animation: none;
+		transform: perspective(1300px) rotateY(180deg) translateZ(215px) scale(0.0);
+	}
+
+	.container.active .shadow.two {
+		animation: none;
+		transform: perspective(1300px) rotateY(180deg) translateZ(120px) scale(0.0);
+	}
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+}
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {}
+
+/* Small (sm) */
+@media (min-width : 576px) {}
+
+/* Medium (md) */
+@media (min-width : 768px) {}
+
+/* Large (lg) */
+@media (min-width : 992px) {}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}

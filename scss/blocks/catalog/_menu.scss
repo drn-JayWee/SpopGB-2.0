@@ -1,0 +1,46 @@
+.menu {
+	width: 10rem;
+
+	&__item {
+		padding-bottom: 1rem;
+		font-size: x-large;
+
+		::after {
+			content:"♥";
+			padding-left: .3rem;
+		}
+	}
+	
+	&__navigation {
+		color: white;
+		text-decoration: none;
+		border-bottom: .1rem solid whitesmoke;
+
+		&:hover {
+			color: $accent;
+			cursor: pointer;
+		}
+	}
+
+	&__items {
+		color: white;
+		font-size: 1.2rem;
+		font-family: 'Raleway-Regular';
+		text-decoration: none;
+
+		&:hover {
+			color: $accent;
+			cursor: pointer;
+		}
+	}
+
+	&__list {
+		color: gray;
+		padding: 0.5rem;
+		margin-left: .5rem;
+		transition: $transition;
+		font-family: 'Raleway-Regular';
+		font-size: small;
+		font-style: italic;
+	}
+}
